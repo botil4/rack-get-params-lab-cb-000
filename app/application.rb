@@ -22,11 +22,11 @@ class Application
 
      if @@items.include?(search_term)
        @@cart << search_term
-       resp.write "#{search_term} is one of our items"
+       #resp.write "#{search_term} is one of our items"
      else
        resp.write "Couldn't find #{search_term}"
      end
-     
+
     else
       resp.write "Path Not Found"
     end
